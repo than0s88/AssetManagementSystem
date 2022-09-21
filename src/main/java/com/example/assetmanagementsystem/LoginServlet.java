@@ -18,7 +18,7 @@ public class LoginServlet extends HttpServlet {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbservlet","root","");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db.ohp.asset","root","");
             String username = request.getParameter("username");
             String password = request.getParameter("password");
 
@@ -29,8 +29,7 @@ public class LoginServlet extends HttpServlet {
             ResultSet rs = pst.executeQuery();
 
             if (rs.next()){
-
-                System.out.printf("WORKING");
+                System.out.println("WORKING");
                 response.sendRedirect("/dashboard");
             }else{
 

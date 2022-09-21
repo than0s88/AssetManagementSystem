@@ -37,19 +37,12 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body">
-
-
-
       <center><img src="/assets/images/ohp-logo2.png" width="95%"></center>
-
-
       <center>
         <p style="font-size: 1rem;">PH ASSET MANAGEMENT SYSTEM<br>
           Admin Access Only</p></center>
-      <form action="LoginServlet" method="post">
-
+      <form action="/login" method="post">
         <div class="input-group form-group">
-
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-user white-icon"></i></span>
           </div>
@@ -68,7 +61,7 @@
 
         </div>
         <div class="form-group form-check">
-          <input class="form-check-input" type="checkbox" name="remember" id="remember" checked>
+          <input class="form-check-input" type="checkbox" id="remember" checked>
           <label class="form-check-label" for="remember">
 
           </label>
